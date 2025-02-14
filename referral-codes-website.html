@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Referral Codes</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #3a1c71;
+            --secondary-color: #d76d77;
+            --tertiary-color: #ffaf7b;
+            --background-color: #f8f9fa;
+            --card-color: #ffffff;
+            --text-color: #333333;
+            --success-color: #28a745;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color), var(--tertiary-color));
+            color: white;
+            text-align: center;
+            padding: 3rem 1rem;
+            margin-bottom: 2rem;
+            border-radius: 0 0 30px 30px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .cards-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+
+        .card {
+            background-color: var(--card-color);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card-header {
+            padding: 1.5rem;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+        }
+
+        .card-title {
+            font-size: 1.5rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .card-title img {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+            border-radius: 8px;
+            background-color: white;
+            padding: 5px;
+        }
+
+        .card-content {
+            padding: 1.5rem;
+        }
+
+        .description {
+            margin-bottom: 1.5rem;
+            color: #555;
+        }
+
+        .referral-benefit {
+            background-color: #f0f8ff;
+            border-left: 4px solid #3a1c71;
+            padding: 1rem;
+            margin-bottom: 1.5rem;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .referral-code-container {
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            padding: 0.75rem;
+            margin-bottom: 1rem;
+        }
+
+        .referral-code {
+            font-family: 'Courier New', monospace;
+            font-weight: bold;
+            flex-grow: 1;
+            font-size: 1.2rem;
+            margin-right: 10px;
+            letter-spacing: 1px;
+        }
+
+        .copy-btn {
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            border-radius: 6px;
+            padding: 8px 15px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            display: flex;
+            align-items: center;
+        }
+
+        .copy-btn:hover {
+            background-color: var(--secondary-color);
+        }
+
+        .copy-icon {
+            margin-right: 5px;
+        }
+
+        .tooltip {
+            position: absolute;
+            background-color: var(--success-color);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-size: 14px;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            pointer-events: none;
+            z-index: 1000;
+            white-space: nowrap;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        }
+
+        .tooltip.show {
+            opacity: 1;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 3rem;
+            padding: 1.5rem;
+            color: #777;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .cards-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .card {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>My Referral Codes</h1>
+            <p class="subtitle">Use these codes to sign up for services I love and we'll both get rewarded!</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="cards-container">
+            <!-- Referral Code 1 -->
+            <div class="card">
+                <div class="card-header">
+                    <h2 class="card-title">
+                        <!-- <img src="/api/placeholder/40/40" alt="Airbnb logo" /> -->
+                        Sarwa
+                    </h2>
+                </div>
+                <div class="card-content">
+                    <p class="description">
+                        Choose hands-off investing of your money or do-it-yourself trade of over 5,000 stocks and ETFs.
+                    </p>
+                    <div class="referral-benefit">
+                        <h3>Referral Benefit</h3>
+                        <p>Deposit $2,500 within 90 days of opening your account and receive $50 to your account.</p>
+                    </div>
+                    <h3>Referral Code</h3>
+                    <div class="referral-code-container">
+                        <div class="referral-code">HOBDEN</div>
+                        <button class="copy-btn" onclick="copyToClipboard('JOHNNYTRAVEL2025', this)">
+                            <i class="fa-regular fa-copy copy-icon"></i> Copy
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Referral Code 2 -->
+            <div class="card">
+                <div class="card-header">
+                    <h2 class="card-title">
+                        <!-- <img src="/api/placeholder/40/40" alt="Uber logo" /> -->
+                        Stake
+                    </h2>
+                </div>
+                <div class="card-content">
+                    <p class="description">
+                        Invest in unique, exclusive, and premium real estate in high-growth markets from the comfort of your home.
+                    </p>
+                    <div class="referral-benefit">
+                        <h3>Referral Benefit</h3>
+                        <p>You will receive AED 200 once fully onboarded and approved.</p>
+                    </div>
+                    <h3>Referral Code</h3>
+                    <div class="referral-code-container">
+                        <div class="referral-code">https://app.getstake.com/rewards?c=DEREK22&n=Derek</div>
+                        <button class="copy-btn" onclick="copyToClipboard('UBER25FRIEND', this)">
+                            <i class="fa-regular fa-copy copy-icon"></i> Copy
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Referral Code 3 -->
+            <!-- <div class="card">
+                <div class="card-header">
+                    <h2 class="card-title">
+                        <img src="/api/placeholder/40/40" alt="DoorDash logo" />
+                        DoorDash
+                    </h2>
+                </div>
+                <div class="card-content">
+                    <p class="description">
+                        Food delivery service that connects you with a wide range of local and national restaurants, delivering their delicious dishes right to your door.
+                    </p>
+                    <div class="referral-benefit">
+                        <h3>Referral Benefit</h3>
+                        <p>You'll get $15 off your first three orders ($5 each), and I'll earn $7 in DoorDash credits after your first order.</p>
+                    </div>
+                    <h3>Referral Code</h3>
+                    <div class="referral-code-container">
+                        <div class="referral-code">DASHWITHME23</div>
+                        <button class="copy-btn" onclick="copyToClipboard('DASHWITHME23', this)">
+                            <i class="fa-regular fa-copy copy-icon"></i> Copy
+                        </button>
+                    </div>
+                </div>
+            </div> -->
+
+            <!-- Template for new referral codes (commented out) -->
+            <!--
+            <div class="card">
+                <div class="card-header">
+                    <h2 class="card-title">
+                        <img src="/api/placeholder/40/40" alt="Service logo" />
+                        Service Name
+                    </h2>
+                </div>
+                <div class="card-content">
+                    <p class="description">
+                        Description of the service...
+                    </p>
+                    <div class="referral-benefit">
+                        <h3>Referral Benefit</h3>
+                        <p>Details about what both parties get...</p>
+                    </div>
+                    <h3>Referral Code</h3>
+                    <div class="referral-code-container">
+                        <div class="referral-code">REFERRALCODE</div>
+                        <button class="copy-btn" onclick="copyToClipboard('REFERRALCODE', this)">
+                            <i class="fa-regular fa-copy copy-icon"></i> Copy
+                        </button>
+                    </div>
+                </div>
+            </div>
+            -->
+
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>Thank you for using my referral codes! Have questions? Contact me.</p>
+        </div>
+    </footer>
+
+    <script>
+        async function copyToClipboard(text, button) {
+            try {
+                // Try the modern clipboard API first
+                if (navigator.clipboard && window.isSecureContext) {
+                    await navigator.clipboard.writeText(text);
+                    showTooltip(button);
+                } else {
+                    // Fallback for older browsers or non-HTTPS
+                    const textArea = document.createElement('textarea');
+                    textArea.value = text;
+                    textArea.style.position = 'fixed';
+                    textArea.style.left = '-999999px';
+                    textArea.style.top = '-999999px';
+                    document.body.appendChild(textArea);
+                    textArea.focus();
+                    textArea.select();
+                    
+                    try {
+                        document.execCommand('copy');
+                        textArea.remove();
+                        showTooltip(button);
+                    } catch (err) {
+                        console.error('Failed to copy text: ', err);
+                        alert('Failed to copy text. Please try selecting and copying manually.');
+                    }
+                    textArea.remove();
+                }
+            } catch (err) {
+                console.error('Failed to copy text: ', err);
+                alert('Failed to copy text. Please try selecting and copying manually.');
+            }
+        }
+
+        function showTooltip(button) {
+            const tooltip = document.createElement('span');
+            tooltip.className = 'tooltip';
+            tooltip.textContent = 'Copied!';
+            
+            button.appendChild(tooltip);
+            button.style.position = 'relative';
+            
+            tooltip.style.position = 'absolute';
+            tooltip.style.top = '-30px';
+            tooltip.style.left = '50%';
+            tooltip.style.transform = 'translateX(-50%)';
+            
+            // Force a reflow before adding the show class
+            tooltip.offsetHeight;
+            tooltip.classList.add('show');
+            
+            setTimeout(() => {
+                tooltip.classList.remove('show');
+                setTimeout(() => {
+                    button.removeChild(tooltip);
+                }, 300);
+            }, 2000);
+        }
+    </script>
+</body>
+</html>
